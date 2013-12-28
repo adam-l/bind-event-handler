@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bind Event Handler</title>
+		<style type="text/css">
+			body {font-family: 'Arial'}
+			body>div {max-width: 960px; padding: 40px 0; margin: 0 auto}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Cross-browser event handler binding.</h1>
+			<p><a id="test-link" href="#">Click to test</a></p>
+		</div>
+
+		<script src="scripts/bind-event-handler.js"></script>
+		<script>
+			var link = document.getElementById('test-link');
+
+			bindEventHandler(link, 'click', function() {alert('It works!')});
+		</script>
+	</body>
+</html>
